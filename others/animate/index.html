@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./data/data.js" charset="utf-8"></script>
+    <script src="./js/m.Tween.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="main_bg"></div>
+    <section id="main_view">
+        <section id="main_area">
+            <section id="main_z">
+                <section id="main_box"></section>
+            </section>
+        </section>
+    </section>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+<!--
+    main-bg -- 背景图
+    main_area -- 控制整体的z轴偏移，配合景深达到预期视野
+    main_z -- 简单控制z轴偏移，优化视野（可以和main_area一起，但是如果需要将整个图形的移动，就不适合修改main_area）
+    main_box -- 1. 存放背景图， 2.通过修改这个元素的旋转角度实现伪3d的效果；
+-->
+
+</html>
